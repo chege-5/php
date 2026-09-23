@@ -6,7 +6,7 @@ body {
     padding: 48px 20px;
     background: #f4f7fb;
     color: #1f2937;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
 .container {
@@ -28,6 +28,7 @@ h1, h2, p {
 }
 
 h1 { 
+    color: #2062b9;
     font-size: 1.75rem;
     letter-spacing: -0.02em;
  }
@@ -47,7 +48,7 @@ h1 {
 }
 
 h2 { 
-    color: #1d4f91; 
+    color: #10223a; 
     font-size: 1.2rem; 
 }
 
@@ -110,7 +111,6 @@ select:focus {
 .result {
     margin-top: 24px;
     padding: 15px 16px;
-    border-left: 3px solid #2874c6;
     border-radius: 4px;
     background: #f8fafc;
 }
@@ -136,7 +136,7 @@ select:focus {
     .arrow { 
         display: none; 
     }
-    
+
     .field {
          flex-basis: 190px;
          }

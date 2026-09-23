@@ -9,7 +9,7 @@
 <body>
     <main class="container">
         <header class="page-header">
-            <h1>Location Selector</h1>
+            <h1>LOCATION SELECTOR</h1>
             <p>Hierarchical location selection</p>
         </header>
 
@@ -18,15 +18,16 @@
             <p class="section-description">Select from top to bottom to filter each location level.</p>
             <div class="selector-row">
                 <div class="field"><label for="cascade-continent">Continent</label><select id="cascade-continent"></select></div>
-                <span class="arrow" aria-hidden="true">→</span>
+                <span class="arrow" aria-hidden="true">-></span>
                 <div class="field"><label for="cascade-country">Country</label><select id="cascade-country"></select></div>
-                <span class="arrow" aria-hidden="true">→</span>
+                <span class="arrow" aria-hidden="true">-></span>
                 <div class="field"><label for="cascade-county">County</label><select id="cascade-county"></select></div>
-                <span class="arrow" aria-hidden="true">→</span>
+                <span class="arrow" aria-hidden="true">-></span>
                 <div class="field"><label for="cascade-ward">Ward</label><select id="cascade-ward"></select></div>
-                <span class="arrow" aria-hidden="true">→</span>
+                <span class="arrow" aria-hidden="true">-></span>
                 <div class="field"><label for="cascade-village">Village</label><select id="cascade-village"></select></div>
             </div>
+
             <div class="result" aria-live="polite">
                 <span class="result-label">Selected location</span>
                 <p id="cascade-result">No location selected</p>

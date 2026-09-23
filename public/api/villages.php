@@ -1,7 +1,5 @@
 <?php
 
-header('Content-Type: application/json');
-
 require_once __DIR__ . '/../../config/database.php';
 
 $wardId = $_GET['ward_id'] ?? null;

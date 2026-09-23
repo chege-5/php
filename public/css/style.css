@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 48px 20px;
+    background: #f4f7fb;
+    color: #1f2937;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.container {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+    padding: 36px;
+    background: #fff;
+    border: 1px solid #dce3ed;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(31, 41, 55, 0.08);
+}
+
+.page-header { margin-bottom: 32px; text-align: center; }
+h1, h2, p { margin: 0; }
+h1 { font-size: 1.75rem; letter-spacing: -0.02em; }
+.page-header p, .section-description { color: #64748b; }
+.page-header p { margin-top: 6px; }
+.selector-section + .selector-section { margin-top: 28px; padding-top: 28px; border-top: 1px solid #e2e8f0; }
+h2 { color: #1d4f91; font-size: 1.2rem; }
+.section-description { margin-top: 6px; font-size: 0.94rem; }
+
+.selector-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.field { flex: 1 1 170px; min-width: 0; }
+label, .result-label {
+    display: block;
+    margin-bottom: 7px;
+    color: #475569;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+select {
+    width: 100%;
+    min-height: 42px;
+    padding: 9px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: #fff;
+    color: #1f2937;
+    font: inherit;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+select:hover { border-color: #94a3b8; }
+select:focus { outline: none; border-color: #2874c6; box-shadow: 0 0 0 3px rgba(40, 116, 198, 0.14); }
+.arrow { padding-bottom: 10px; color: #94a3b8; font-size: 1.25rem; }
+
+.result {
+    margin-top: 24px;
+    padding: 15px 16px;
+    border-left: 3px solid #2874c6;
+    border-radius: 4px;
+    background: #f8fafc;
+}
+
+.result-label { margin-bottom: 4px; }
+.result p { color: #334155; font-size: 0.95rem; }
+
+@media (max-width: 720px) {
+    body { padding: 24px 14px; }
+    .container { padding: 24px 20px; }
+    .arrow { display: none; }
+    .field { flex-basis: 190px; }
+}
